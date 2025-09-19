@@ -56,10 +56,13 @@ public class Employee
         int age = calculateAge(2025);
         if (age >= 16) {
             System.out.println("can drive");
+            return true;
         }
-        if (age <= 16) {
+        else {
             System.out.println("uneligeable to drive until 16 years old or above");
+            return false;
         }
+   
     }
 
     /**
