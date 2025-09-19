@@ -11,44 +11,42 @@ public class Employee{
     private double hourlyWage;
     private double unpaidHours;
 
-    public Employee(String fullname, int yearOfBirth, double hourlyWage){
+        public Employee(String fullname, int yearOfBirth, double hourlyWage){
         this.fullname = fullname;
         this.yearOfBirth = yearOfBirth;
         this.hourlyWage = hourlyWage;
         onLeave = false;
         unpaidHours = 0.0;
     }
+    
     /**
-     * Employee full name Getter
+     * Full name 
      */
-    public Employee(String fullname){
-    Get.Display(fullname);
-    fullname=fullname  
-}
-
+        public Employee(String fullname){
+        fullname= fullname;
+    }
     /**
-     * Employee full name Setter
+     * Full name
      */
-    public employee(int fullname){
-    this.fullname=fullname
-    fullname=John Deere
-}
+        public Employee(){
+        return fullname;
+        }
     
     /**
      * Returns true is an employee is above 16 years old
      */
-    private int calculateAge(int currentYear){
+        private int calculateAge(int currentYear){
         return (currentYear - yearOfBirth);
     }
 
     /**
      * Returns true is an employee is above 16 years old
      */
-    public boolean canDrive(){
+        public boolean canDrive(){
         int age = calculateAge(2025);
         if(age >= 16);
         printf("can drive");
-        if(age <= 16);
+        if(age<= 16)
         printf("uneligeable to drive until 16 years old or above");
         
     }
@@ -56,17 +54,21 @@ public class Employee{
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
-    private double calculatePay(){
-        if(unpaidhours= 0)
-        printf("hours worked x hourly wage")
-        if(tax=30%)
-        printf(:"hours worked x hourly wage x 30% t
+        private double calculatePay(){
+        if(unpaidHours> 0)
+        printf("hours worked x hourly wage");
+        
+        
+        
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        if(hoursworked= 0)
+        printf("total pay");
+        if(unpaidhours>= 0)
+        printf("Total pay - unpaid hours x hourly wage");
     }
 }
